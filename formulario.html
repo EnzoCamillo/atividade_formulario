@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html language="pt-br">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Formulário</title>
+    <style>
+        fieldset{
+            width: 650px;
+            padding: 15px;
+        }
+      .janeiro, .maio{
+        border-bottom: 2px solid black; 
+        padding:0px;
+      }
+      .fevereiro, .marco, .abril{
+        border-left: 2px solid black;
+        padding:0px;
+      }
+      .junho, .julho{
+        border: 2px solid black; 
+        padding:0px;
+      }
+      .agosto, .dezembro{
+        border-top: 2px solid black; 
+        padding:0px;
+      }
+      .setembro, .outubro, .novembro{
+        border-right: 2px solid black; 
+        padding:0px;
+      }
+      textarea{
+        resize:none; 
+        border:solid white;
+      }
+      .t1{
+        border-collapse: collapse;
+      }
+      .t2{
+        border: 2px solid black; 
+        border-collapse:collapse;
+      }
+      .l1{
+        background-color:#888;
+      }
+      .t2 td, .t2 th{
+        border: 2px solid black;padding:5px;
+      }
+      .t2 input{
+        border: solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FORMULÁRIO</h1>
+    <form method="get">
+      <fieldset>
+        <label for="vnome">Nome:</label>
+        <input type="text" id="vnome" name="nome" size="68" placeholder="Informe seu nome."><p></p>
+        <label for="vtele">Telefone:</label>
+        <input type="tel" id="vtele" name="telefone" placeholder="(xx)xxxxx-xxxx">
+        <label for="vcurso">Curso:</label>
+        <input type="text" id="vcurso" name="curso" size="33" placeholder="Informe o seu curso."><p></p>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" size="67" placeholder="Informe o seu e-mail."><p></p>
+        <label for="vescola">Escola/Faculdade:</label>
+        <input type="text" id="vescola" name="escola" size="57" placeholder="Infome a sua instituição.">
+      </fieldset>
+      
+      <table class="t1">
+        <tr>
+          <th colspan="4"><h3>Planejamento Anual</h3></th>
+        </tr>
+        <tr>
+            <th class="janeiro">
+              <label for="janeiro">Janeiro</label><br>
+              <textarea id="janeiro" name="jan" rows="10" cols="20"></textarea></th>
+            <th class="fevereiro">
+              <label for="fevereiro">Fevereiro</label><br>
+              <textarea id="fevereiro" name="fev" rows="10" cols="20"></textarea></th>
+            <th class="marco">
+              <label for="marco">Março</label><br>
+              <textarea rows="10" cols="20" id="marco" name="mar"></textarea></th>
+            <th class="abril">
+              <label for="abril">Abril</label><br>
+              <textarea rows="10" cols="20" id="abril" name="abri"></textarea></th>
+          </tr>
+
+          <tr>
+            <th class="maio">
+              <label for="maio">Maio</label><br>
+              <textarea rows="10" cols="20" id="maio" name="mai"></textarea></th>
+            <th class="junho">
+              <label for="junho">Junho</label><br>
+              <textarea rows="10" cols="20" id="junho" name="jun"></textarea></th>
+            <th class="julho">
+              <label for="julho">Julho</label><br>
+              <textarea rows="10" cols="20" id="julho" name="jul"></textarea></th>
+            <th class="agosto">
+              <label for="agosto">Agosto</label><br>
+              <textarea rows="10" cols="20" id="agosto" name="ago"></textarea></th>
+          </tr>
+
+          <tr>
+            <th class="setembro">
+              <label for="setembro">Setembro</label><br>
+              <textarea rows="10" cols="20" id="setembro" name="set"></textarea></th>
+            <th class="outubro">
+              <label for="outubro">Outubro</label><br>
+              <textarea rows="10" cols="20" id="outubro" name="out"></textarea></th>
+            <th class="novembro">
+              <label for="novembro">Novembro</label><br>
+              <textarea rows="10" cols="20" id="novembro" name="nov"></textarea></th>
+            <th class="dezembro">
+              <label for="dezembro">Dezembro</label><br>
+              <textarea rows="10" cols="20" id="dezembro" name="dez"></textarea></th>
+          </tr>
+      </table>
+      <br />
+      <table class="t2">
+        <tr class="l1">
+          <th>SEGUNDA</th>
+          <th>TERÇA</th>
+          <th>QUARTA</th>
+          <th>QUINTA</th>
+          <th>SEXTA</th>
+          <th>SÁBADO</th>
+          <th>DOMINGO</th>
+        </tr>
+        <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+         <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+         <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+         <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+         <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+         <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+         <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+         <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+         <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+         <tr>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+          <td><input type="text" size="7px"></td>
+        </tr>
+      </table>
+      <br /><input type="submit"> 
+      <input type="reset">
+    </form>
+  </body>
+</html>
